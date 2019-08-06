@@ -1,0 +1,23 @@
+{% extends 'blog/base.html' %}
+
+{% block title %}博客{% endblock %}
+
+{% block content %}
+    <h1>博客列表</h1>
+
+    {% for blogs in posts %}
+        <div class="list_content">
+            <h2>
+                <a href="{{ blogs.get_absolute_url }}">{{ blogs.title }}</a>
+            </h2>
+            <span>
+                创建时间 {{ blogs.publish }} by {{ blogs.author }}
+            </span>
+            <div class="blogs_list_content">
+                {{ blogs.sessions|safe }}
+            </div>
+        </div>
+    {% endfor %}
+    {% include "pagination.html" with page=page_obj %}
+
+{% endblock %}

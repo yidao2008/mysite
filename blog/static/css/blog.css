@@ -1,0 +1,81 @@
+body{
+    padding:0;
+    margin:0;
+    font-family:"微软雅黑";
+}
+h2, h1, ul, li{
+    padding:0;
+    margin:0;
+}
+.warpper{
+    width:100%;
+    max-width:1200px;
+    margin:auto;
+}
+.content{
+    width:60%;
+    float:left;
+    padding-left:1%;
+    margin-top:20px;
+}
+.content h2 a{
+    color:#454545;
+}
+.content span{
+    font-size:12px;
+    color:#a9a9a9;
+    display:block;
+}
+.content p img{
+    max-width:600px;
+}
+.content div.list_content img{
+    display:none;
+}
+.list_content{
+    border-bottom:solid 2px #f1f1f1;
+    padding:20px 0;
+}
+.list_content div.blogs_list_content{
+    width100%;
+}
+.sidebar{
+    width:25%;
+    float:right;
+    background-color:#f1f1f1;
+    padding:2%;
+}
+.pagination {
+    margin:40px 0;
+    font-weight:bold;
+}
+/* forms */
+label {
+    float:left;
+    clear:both;
+    color:#333;
+    margin-bottom:4px;
+}
+input, textarea {
+    clear:both;
+    float:left;
+    margin:0 0 10px;
+    background:#ededed;
+    border:0;
+    padding:6px 10px;
+    font-size:12px;
+}
+input[type=submit] {
+    font-weight:bold;
+    background:#00abff;
+    color:#fff;
+    padding:10px 20px;
+    font-size:14px;
+    text-transform:uppercase;
+}
+.errorlist {
+    color:#cc0033;
+    float:left;
+    clear:both;
+    padding-left:10px;
+}
