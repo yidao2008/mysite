@@ -4,6 +4,7 @@ import xadmin
 from DjangoUeditor import urls as DjangoUeditor_urls
 from django.conf import settings
 import django.views
+import settings.STATIC_ROOT
 
 
 
