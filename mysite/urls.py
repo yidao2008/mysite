@@ -3,6 +3,7 @@ from django.urls import path,include
 import xadmin
 from DjangoUeditor import urls as DjangoUeditor_urls
 from django.conf import settings
+import django.views
 
 
 
@@ -10,6 +11,7 @@ urlpatterns = [
     path('xadmin/', xadmin.site.urls),
     path('blog/', include('blog.urls', namespace='blog')),
     path('ueditor/', include(DjangoUeditor_urls)),
+    path('static/', django.views.static.serve, {'document_root': STATIC_ROOT} ),
 ]
 
 if settings.DEBUG:
