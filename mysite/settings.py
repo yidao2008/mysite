@@ -25,7 +25,7 @@ import os
 SECRET_KEY=os.environ.get('DJANGO_SECRET_KEY', '3h!256-zb=xnjd*65@t09ifq9=z(0rpw(fg0gc2+_e*!lmjmhf')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 # DEBUG = bool(os.environ.get('DJANGO_DEBUG', True))
 
 ALLOWED_HOSTS = ['*']
@@ -85,8 +85,8 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'mysite_demo',
-        'USER': 'root',
-        'PASSWORD': '123456',
+        'USER': 'yidao',
+        'PASSWORD': 'beyond867264',
         'HOST': '127.0.0.1',
         'PORT': '3306',
     }
@@ -138,7 +138,8 @@ USE_TZ = False
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
 
-STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+
 STATIC_URL = '/static/'
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 MEDIA_URL='/upload/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'upload/') #这个是在浏览器上访问该上传文件的url的前缀
